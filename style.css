@@ -7,20 +7,22 @@ body {
 
 section {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto',sans-serif;
 }
 
 .title {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto',sans-serif;
     font-size: 50px;
     color: black;
 }
 
 #start-button {
     background-color: white;
-    font-family: 'Courier New', Courier, monospace;
+    border-radius: 50px;
+    font-family: 'Roboto',sans-serif;
     color: green;
     text-align: center;
+    margin-bottom: 50px;
     padding: 15px;
     width: 100px;
     height: 100px;
@@ -37,8 +39,10 @@ section {
 .question-number {
    display: inline-block;
    background-color: white;
-   border-radius: 25px;
+   border-radius: 100px;
    border: 2px solid black;
+   margin-left: 50px;
+   margin-right: 50px;
    padding: 15px;
    width: 100px;
    height: 50px;
@@ -49,6 +53,7 @@ section {
     background-color: white;
     border-radius: 25px;
     border: 2px solid black;
+    box-shadow: 5px 10px darkblue;
     padding: 60px;
     width: 400px;
     height: 100px;
@@ -57,28 +62,34 @@ section {
 .timer {
     display: inline-block;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 100px;
     border: 2px solid black;
+    margin: 50px;
     padding: 30px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
-.answer-container {
+/* .answer-container {
    background-color: lightskyblue;
    align-items: center;
    padding: 15px;
    width: 100px;
    height: 75px;
-}
+} */
 
 .answer-box {
    display: inline-block;
+   position: relative;
    background-color: white;
    border-radius: 25px;
    border: 2px solid black;
-   padding: 15px;
+   box-shadow: 5px 10px darkblue;
+   margin-top: 85px;
+   margin-left: 25px;
+   margin-right: 25px;
+   padding: 50px;
    width: 300px;
-   height: 50px;
+   height: 100px;
 
 }
