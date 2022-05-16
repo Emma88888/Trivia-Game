@@ -1,28 +1,33 @@
 body {
-    background: white;
+    background: lightskyblue;
     text-align: center;
     margin: 0;
     padding: 0;
-
 }
-
-
 
 section {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-
 }
 
 .title {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: black;
+}
 
+#start-button {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    text-align: center;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
 }
 
 .question-container {
-   background-color: white;
+   background: white;
    align-items: center;
    padding: 15px;
    width: 50px;
@@ -59,9 +64,8 @@ section {
     height: 150px;
 }
 
-
 .answer-container {
-   background-color: white;
+   background-color: lightskyblue;
    align-items: center;
    padding: 15px;
    width: 100px;
