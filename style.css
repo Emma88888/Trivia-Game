@@ -1,3 +1,5 @@
+/* how can I make this all fit in the browser withot changing shape when I change the browser size? */
+
 body {
     background: lightskyblue;
     text-align: center;
@@ -80,6 +82,22 @@ section {
 
 .answer-box {
    display: inline-block;
+   position: relative;
+   background-color: white;
+   border-radius: 25px;
+   border: 2px solid black;
+   box-shadow: 5px 10px darkblue;
+   margin-top: 85px;
+   margin-left: 25px;
+   margin-right: 25px;
+   padding: 50px;
+   width: 300px;
+   height: 100px;
+
+}
+
+.score {
+    display: inline-block;
    position: relative;
    background-color: white;
    border-radius: 25px;

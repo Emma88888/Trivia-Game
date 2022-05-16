@@ -1,9 +1,12 @@
-//click start, get axios questions
+// Functions
+// 1) click start, get axios, first question appears and start timer (one function??)
+// 2) player presses correct answer, score increases, next question begins, question # changes, timer restarts || player presses wrong answer, score decreases, next question is loaded, question # changes and timer restarts  || time runs out, next question loads, question # changes, and timer restarts
+// 3) All questions are answered, prompt with final score appears
+// 4) Try again button?
+
 let question = document.querySelector(".question")
 
 let answers = document.querySelectorAll(".answer-box")
-
-let timeLeft = 10;
 
 // let timer = document.querySelector(".timer")
 //     setInterval(function(){
@@ -23,6 +26,18 @@ let timeLeft = 10;
 // })
 // console.log(timer)
 
+// function timer() {
+//     let seconds = 10;
+//     let timer = setInterval(function() {
+//         document.querySelector(".timer").innerHTML="0"+sec;
+//         sec--;
+//         if (sec < 0) {
+//             clearInterval(timer);
+//         }
+//     }, 1000);
+//     console.log(timer)
+// }
+
 
 
 document.querySelector("#start-button").addEventListener("click", (event) => {
@@ -39,4 +54,16 @@ document.querySelector("#start-button").addEventListener("click", (event) => {
     .catch((error) => {
         console.log(error);
     })
+    function timer() {
+        let seconds = 10;
+        let timer = setInterval(function() {
+            // console.log(timer)
+            document.querySelector(".timer").innerHTML="0"+sec;
+            sec--;
+            if (sec < 0) {
+                clearInterval(timer);
+            }
+        }, 1000);
+    }
 })
+
