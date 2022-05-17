@@ -1,19 +1,27 @@
 /* how can I make this all fit in the browser withot changing shape when I change the browser size? */
 
 body {
-    background: lightskyblue;
+    /* background: lightskyblue; */
+    background-image: linear-gradient(lightskyblue, darkblue);
     text-align: center;
     margin: 0;
     padding: 0;
+    font-family: 'Goblin One', cursive;
 }
 
 section {
     text-align: center;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Goblin One', cursive;
 }
 
+/* #earth {
+    width: 75px;
+    height: 75px;
+    margin: 3em auto;
+} */
+
 .title {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Goblin One', cursive;
     font-size: 50px;
     color: black;
 }
@@ -21,7 +29,7 @@ section {
 #start-button {
     background-color: white;
     border-radius: 50px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Goblin One', cursive;
     color: green;
     text-align: center;
     margin-bottom: 50px;
@@ -55,10 +63,10 @@ section {
     background-color: white;
     border-radius: 25px;
     border: 2px solid black;
-    box-shadow: 5px 10px darkblue;
     padding: 60px;
     width: 400px;
     height: 100px;
+    font-size: 25px;
 }
 
 .timer {
@@ -102,12 +110,11 @@ section {
    background-color: white;
    border-radius: 25px;
    border: 2px solid black;
-   box-shadow: 5px 10px darkblue;
    margin-top: 85px;
    margin-left: 25px;
    margin-right: 25px;
    padding: 50px;
-   width: 300px;
-   height: 100px;
+   width: 200px;
+   height: 50px;
 
 }

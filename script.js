@@ -4,39 +4,17 @@
 // 3) All questions are answered, prompt with final score appears
 // 4) Try again button?
 
-let question = document.querySelector(".question")
+// const question = document.querySelector(".question")
+const score = document.querySelector(".score");
+const answers = document.querySelectorAll(".answer-box");
+const timer = document.querySelector(".timer")
+const question = document.querySelector(".question")
+const questionNum = document.querySelector(".question-number")
 
-let answers = document.querySelectorAll(".answer-box")
 
-// let timer = document.querySelector(".timer")
-//     setInterval(function(){
-//         console.log("Called!");
-//         setTimeout(timerCount, 10000);
-//             if (timeLeft === 10) {
-//                 console.log(timeLeft--)
-//             } else if (timeLeft === 0) {
-//                  window.alert("Out of time!");
-//             }
-// })
-
-// let timer= setInterval(function() {
-//     if (timeLeft === 10) {
-//         timeLeft -= 1;
-//     }
-// })
-// console.log(timer)
-
-// function timer() {
-//     let seconds = 10;
-//     let timer = setInterval(function() {
-//         document.querySelector(".timer").innerHTML="0"+sec;
-//         sec--;
-//         if (sec < 0) {
-//             clearInterval(timer);
-//         }
-//     }, 1000);
-//     console.log(timer)
-// }
+function shufle(aray) {
+    Array.sort(() => Math.random());
+}
 
 
 
@@ -47,23 +25,27 @@ document.querySelector("#start-button").addEventListener("click", (event) => {
     })
     .then((response) => {
         console.log(response.data.results[0].question);
-        function responses(questions) {
-            responses.forEach(x => console.log(x));
-        } 
+        let results = (`${response.data.results[0].question}`);
+        question.innerText = results;
+        question.setAttribute(question, results);
+        results.appendChild(question);
+        questionNum = 1
+        questionNum++
+        })
     })
     .catch((error) => {
         console.log(error);
     })
-    function timer() {
-        let seconds = 10;
-        let timer = setInterval(function() {
-            // console.log(timer)
-            document.querySelector(".timer").innerHTML="0"+sec;
-            sec--;
-            if (sec < 0) {
-                clearInterval(timer);
-            }
-        }, 1000);
-    }
-})
+    let timeLeft = 10
+    timer.setInterval(function(){
+        if(timeLeft <= 0){
+        clearInterval(downloadTimer);
+        timer.innerHTML = "Out of time!";
+        } else {
+        timer.innerHTML = timeLeft + " seconds left";
+  }
+  timeLeft -= 1;
+}, 1000);
+    
+
 
