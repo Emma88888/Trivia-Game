@@ -18,17 +18,8 @@ const question = document.querySelector(".question")
 const questionNum = document.querySelector(".question-number")
 let fetchedQuestions = [];
 let scoreTrack = 0;
-
-// let timeLeft = 10;
-// timer.setInterval(function(){
-//     if(timeLeft <= 0){
-//     clearInterval(downloadTimer);
-//     timer.innerHTML = "Out of time!";
-//     } else {
-//     timer.innerHTML = timeLeft + " seconds left";
-//  }
-// timeLeft -= 1;
-// }, 1000);
+let seconds = 15;
+let second = 0;
 
 
 function shuffle(arr) {
@@ -47,11 +38,16 @@ document.querySelector("#start-button").addEventListener("click", (event) => {
         fetchedQuestions = response.data.results;
         console.log(fetchedQuestions) 
         populateQuestion(fetchedQuestions);
-        //question.setAttribute(question, results);
-        //results.appendChild(question);
         }).catch((error) => {
             console.log(error);
         })
+    interval = setInterval(function() {
+        timer.innerHTML = (seconds - second) + ' seconds left';
+            if (second >= seconds) {
+            clearInterval(interval);
+            }
+            second++;
+        }, 1500);
     })
 
     function populateQuestion(questions){
@@ -61,7 +57,6 @@ document.querySelector("#start-button").addEventListener("click", (event) => {
             let incorrect1 = element.incorrect_answers[0];
             let incorrect2 = element.incorrect_answers[1];
             let incorrect3 = element.incorrect_answers[2];
-
             question.innerText = questionAPI;
             answer1.innerText = correctAnswer;
             answer2.innerText = incorrect1;
@@ -70,6 +65,8 @@ document.querySelector("#start-button").addEventListener("click", (event) => {
 
         });
     };
+
+answers.addEventListener()
 
 
     

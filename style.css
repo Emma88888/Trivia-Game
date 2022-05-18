@@ -1,12 +1,12 @@
 /* how can I make this all fit in the browser withot changing shape when I change the browser size? */
 
 body {
-    /* background: lightskyblue; */
     background-image: linear-gradient(lightskyblue, darkblue);
     text-align: center;
     margin: 0;
     padding: 0;
     font-family: 'Goblin One', cursive;
+    background-color: #111;
 }
 
 section {
@@ -14,17 +14,95 @@ section {
     font-family: 'Goblin One', cursive;
 }
 
-/* #earth {
-    width: 75px;
-    height: 75px;
-    margin: 3em auto;
-} */
+.title {
+    float: center;
+    clear: both;
+    margin-top: 0px;
+    font-family: 'Goblin One', cursive;
+    color: black;
+}
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+  
+  .title-word-1 {
+      font-size: 50px;
+    --color-1: #069e20;
+    --color-2: #028513;
+    --color-3: #306123;
+  }
+  
+  .title-word-2 {
+      font-size: 50px;
+    --color-1: #289042;
+    --color-2: #15641c;
+    --color-3: #176404;
+  }
+
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+
+  /* title color styling courtesy of https://alvarotrigo.com/blog/css-text-animations/
+   */
+
+   .description {
+       color: darkgreen;
+   }
+
+  #earth {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+    border-radius: 50%;
+    background-size: 610px;
+    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  }
+  @keyframes rotate {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: 610px 0px;
+    }
+  }
+  @-webkit-keyframes rotate {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: 610px 0px;
+    }
+  }
+
+  /* spinning earth animation courtesy of https://stackoverflow.com/users/2511146/the-pragmatick */
+
+/* section {
+    text-align: center;
+    font-family: 'Goblin One', cursive;
+}
 
 .title {
     font-family: 'Goblin One', cursive;
     font-size: 50px;
     color: black;
-}
+} */
 
 #start-button {
     background-color: white;
@@ -101,11 +179,11 @@ section {
    padding: 50px;
    width: 300px;
    height: 100px;
-
+   font-family: 'Goblin One', cursive;
 }
 
 .score {
-    display: inline-block;
+   display: inline-block;
    position: relative;
    background-color: white;
    border-radius: 25px;
@@ -116,5 +194,4 @@ section {
    padding: 50px;
    width: 200px;
    height: 50px;
-
 }
