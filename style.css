@@ -28,7 +28,7 @@ section {
   
   .title-word-1 {
       font-size: 50px;
-    --color-1: #069e20;
+    --color-1: #06941d;
     --color-2: #028513;
     --color-3: #306123;
   }
@@ -37,7 +37,7 @@ section {
       font-size: 50px;
     --color-1: #289042;
     --color-2: #15641c;
-    --color-3: #176404;
+    --color-3: #114f01;
   }
 
   @keyframes color-animation {
@@ -50,7 +50,7 @@ section {
     100%  {color: var(--color-1)}
   }
 
-  /* title color styling courtesy of https://alvarotrigo.com/blog/css-text-animations/
+  /* h1 color styling courtesy of https://alvarotrigo.com/blog/css-text-animations/
    */
 
    .description {
@@ -66,11 +66,11 @@ section {
     background-size: 610px;
     box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
     animation-name: rotate;
-    animation-duration: 12s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-name: rotate;
-    -webkit-animation-duration: 12s;
+    -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
   }
