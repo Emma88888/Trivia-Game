@@ -1,2 +1,2 @@
 # Trivia-Game
-A game of geographical trivia using a free API
+A game of general geography trivia using a free API. Answer ten questions with ten seconds each, see how many you can get correct!
