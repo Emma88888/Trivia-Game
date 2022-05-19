@@ -19,7 +19,6 @@ section {
     clear: both;
     margin-top: 0px;
     font-family: 'Goblin One', cursive;
-    color: black;
 }
 
 .title-word {
@@ -68,7 +67,7 @@ section {
     background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
     border-radius: 50%;
     background-size: 610px;
-    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    /* box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3); */
     animation-name: rotate;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -77,7 +76,10 @@ section {
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
+    -webkit-box-shadow: -14px -9px 5px -5px rgba(0,0,0,0.8); 
+    box-shadow: -14px -9px 5px -5px rgba(0,0,0,0.8);
   }
+  
   @keyframes rotate {
     from {
       background-position: 0px 0px;
@@ -102,7 +104,8 @@ section {
     /* background-color: white; */
     border-radius: 50px;
     font-family: 'Goblin One', cursive;
-    color: green;
+    background-color: green;
+    color: lightblue;
     text-align: center;
     margin-bottom: 50px;
     padding: 15px;
@@ -116,6 +119,7 @@ section {
    padding: 15px;
    width: 50px;
    height: 50px;
+   color: lightblue;
 }
 
 .question-number {
@@ -128,6 +132,7 @@ section {
    padding: 15px;
    width: 100px;
    height: 50px;
+   color: lightblue;
 }
 
 .question {
@@ -143,6 +148,7 @@ section {
 }
 
 .timer {
+    color: lightblue;
     display: inline-block;
     /* background-color: white; */
     border-radius: 100px;
@@ -162,6 +168,7 @@ section {
 } */
 
 .answer-box {
+  color: lightblue;
    display: inline-block;
    text-align: center;
    position: relative;
@@ -177,7 +184,6 @@ section {
    height: 100px;
    font-family: 'Goblin One', cursive;
    line-height: var(--h);
-   color: lightblue;
    text-shadow: 2px 2px darkblue;
    background: 
     linear-gradient(#1da15b 0 0)
