@@ -54,7 +54,11 @@ section {
    */
 
    .description {
-       color: darkgreen;
+    color: darkgreen;
+   }
+
+   h3 {
+     color: darkgreen;
    }
 
   #earth {
@@ -93,19 +97,9 @@ section {
 
   /* spinning earth animation courtesy of https://stackoverflow.com/users/2511146/the-pragmatick */
 
-/* section {
-    text-align: center;
-    font-family: 'Goblin One', cursive;
-}
-
-.title {
-    font-family: 'Goblin One', cursive;
-    font-size: 50px;
-    color: black;
-} */
 
 #start-button {
-    background-color: white;
+    /* background-color: white; */
     border-radius: 50px;
     font-family: 'Goblin One', cursive;
     color: green;
@@ -117,7 +111,7 @@ section {
 }
 
 .question-container {
-   background: white;
+   /* background: white; */
    align-items: center;
    padding: 15px;
    width: 50px;
@@ -126,9 +120,9 @@ section {
 
 .question-number {
    display: inline-block;
-   background-color: white;
+   /* background-color: white; */
    border-radius: 100px;
-   border: 2px solid black;
+   border: 2px solid transparent;
    margin-left: 50px;
    margin-right: 50px;
    padding: 15px;
@@ -137,10 +131,11 @@ section {
 }
 
 .question {
+    text-align: center;
     display: inline-block;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 25px;
-    border: 2px solid black;
+    border: 2px solid transparent;
     padding: 60px;
     width: 400px;
     height: 100px;
@@ -149,9 +144,9 @@ section {
 
 .timer {
     display: inline-block;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 100px;
-    border: 2px solid black;
+    border: 2px solid transparent;
     margin: 50px;
     padding: 30px;
     width: 100px;
@@ -170,7 +165,7 @@ section {
    display: inline-block;
    text-align: center;
    position: relative;
-   background-color: white;
+   /* background-color: white; */
    border-radius: 25px;
    border: 2px solid transparent;
    /* box-shadow: 5px 10px darkblue; */
@@ -187,9 +182,8 @@ section {
    background: 
     linear-gradient(#1da15b 0 0)
     bottom/100% var(--_d, 0) no-repeat;
-  /* background color code from Temani Afif */
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .answer-box:hover {
@@ -198,12 +192,16 @@ section {
   --_c: #0000;
 }
 
+/* background color code and hover elements from Temani Afif */
+
 .score {
+  color: lightblue;
+  font-size: 50px;
    display: inline-block;
    position: relative;
-   background-color: white;
+   /* background-color: white; */
    border-radius: 25px;
-   border: 2px solid black;
+   border: 2px solid transparent;
    margin-top: 85px;
    margin-left: 25px;
    margin-right: 25px;
