@@ -4,7 +4,7 @@
 // 3) All questions are answered, prompt with final score appears
 // 4) Try again button?
 
-// Things I want/need to work on: timer speeding up and going negative, questions looping correctly?, win/lose screen, better styling
+// Things I want/need to work on: questions looping randomly, win/lose modal, better styling
 
 
 const score = document.querySelector(".score");

@@ -103,7 +103,7 @@ section {
 #start-button {
     /* background-color: white; */
     border-radius: 50px;
-    /* font-family: 'Goblin One', cursive; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: green;
     color: lightblue;
     text-align: center;
@@ -137,6 +137,7 @@ section {
 }
 
 .question {
+  color: lightblue;
     text-align: center;
     display: inline-block;
     /* background-color: white; */
