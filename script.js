@@ -43,7 +43,8 @@ document.querySelector("#start-button").addEventListener("click", (event) => {
     interval = setInterval(function() {
         timer.innerHTML = (seconds - second) + ' seconds left';
             if (second >= seconds) {
-            clearInterval(interval);
+                console.log("Stop the timer");
+                clearInterval(interval);
             }
             second++;
         }, 1000);
@@ -78,6 +79,7 @@ function checkanswer(obj) {
     else {
         scoreTrack--;
         document.getElementById("scorediv").innerText = String(scoreTrack);
+        clearInterval(interval)
     }
     document.querySelector("#start-button").click();
 }

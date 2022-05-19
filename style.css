@@ -5,20 +5,20 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    font-family: 'Goblin One', cursive;
+    /* font-family: 'Goblin One', cursive; */
     background-color: #111;
 }
 
 section {
     text-align: center;
-    font-family: 'Goblin One', cursive;
+    /* font-family: 'Goblin One', cursive; */
 }
 
 .title {
     float: center;
     clear: both;
     margin-top: 0px;
-    font-family: 'Goblin One', cursive;
+    /* font-family: 'Goblin One', cursive; */
 }
 
 .title-word {
@@ -76,8 +76,8 @@ section {
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
-    -webkit-box-shadow: -14px -9px 5px -5px rgba(0,0,0,0.8); 
-    box-shadow: -14px -9px 5px -5px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 1px 1px 50px 17px rgba(231,255,255,0.45); 
+    box-shadow: 1px 1px 50px 17px rgba(231,255,255,0.45);
   }
   
   @keyframes rotate {
@@ -103,7 +103,7 @@ section {
 #start-button {
     /* background-color: white; */
     border-radius: 50px;
-    font-family: 'Goblin One', cursive;
+    /* font-family: 'Goblin One', cursive; */
     background-color: green;
     color: lightblue;
     text-align: center;
@@ -111,6 +111,7 @@ section {
     padding: 15px;
     width: 100px;
     height: 100px;
+    font-size: 25px;
 }
 
 .question-container {
@@ -182,7 +183,8 @@ section {
    padding: 50px;
    width: 300px;
    height: 100px;
-   font-family: 'Goblin One', cursive;
+   /* font-family: 'Goblin One', cursive; */
+   font-size: 25px;
    line-height: var(--h);
    text-shadow: 2px 2px darkblue;
    background: 
