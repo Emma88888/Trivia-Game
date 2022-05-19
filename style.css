@@ -168,11 +168,12 @@ section {
 
 .answer-box {
    display: inline-block;
+   text-align: center;
    position: relative;
    background-color: white;
    border-radius: 25px;
-   border: 2px solid black;
-   box-shadow: 5px 10px darkblue;
+   border: 2px solid transparent;
+   /* box-shadow: 5px 10px darkblue; */
    margin-top: 85px;
    margin-left: 25px;
    margin-right: 25px;
@@ -180,6 +181,21 @@ section {
    width: 300px;
    height: 100px;
    font-family: 'Goblin One', cursive;
+   line-height: var(--h);
+   color: lightblue;
+   text-shadow: 2px 2px darkblue;
+   background: 
+    linear-gradient(#1da15b 0 0)
+    bottom/100% var(--_d, 0) no-repeat;
+  /* background color code from Temani Afif */
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer-box:hover {
+  --_d: 100%;
+  --_t: 0;
+  --_c: #0000;
 }
 
 .score {

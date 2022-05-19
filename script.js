@@ -4,7 +4,7 @@
 // 3) All questions are answered, prompt with final score appears
 // 4) Try again button?
 
-// Things I want/need to work on: timer not speeding up and going negative, questions looping correctly?, score being kept, win/lose screen, better styling
+// Things I want/need to work on: timer speeding up and going negative, questions looping correctly?, win/lose screen, better styling
 
 
 const score = document.querySelector(".score");
@@ -34,7 +34,7 @@ document.querySelector("#start-button").addEventListener("click", (event) => {
     })
     .then((response) => {
         fetchedQuestions = response.data.results;
-        console.log(fetchedQuestions) 
+        // console.log(fetchedQuestions) 
         // document.querySelector(".question-number").innerText = String(questionNum);
         populateQuestion(fetchedQuestions);
         }).catch((error) => {
@@ -67,7 +67,6 @@ document.querySelector("#start-button").addEventListener("click", (event) => {
             answer4.innerText = incorrect3;
             // questionNum++;
             // document.querySelector.innerText = String(questionNum);
-            // how to make these randomized so the correct answer is not always the same question?
         });
     }
 
