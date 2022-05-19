@@ -75,11 +75,12 @@ function checkanswer(obj) {
     if (obj.innerText == answer1.innerText) {
         scoreTrack++;
         document.getElementById("scorediv").innerText = String(scoreTrack);
+        clearInterval(interval);
     }
     else {
         scoreTrack--;
         document.getElementById("scorediv").innerText = String(scoreTrack);
-        clearInterval(interval)
+        clearInterval(interval);
     }
     document.querySelector("#start-button").click();
 }

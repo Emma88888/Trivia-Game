@@ -183,8 +183,8 @@ section {
    padding: 50px;
    width: 300px;
    height: 100px;
-   /* font-family: 'Goblin One', cursive; */
-   font-size: 25px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
    line-height: var(--h);
    text-shadow: 2px 2px darkblue;
    background: 
