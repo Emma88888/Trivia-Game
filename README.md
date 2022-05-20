@@ -32,6 +32,7 @@ Game link: https://emmastriviagame.netlify.app
 
 The code for my scoring is somwhow reversed, and I couldn't figure it out; originally, if you got a question right the score would go down and vice versa. As a quick fix, I switched the code so that if you get a question correct you lose a point (which translates somehow to gaining a point), and vice versa. I would love to fix this  correctly eventually.
 I would also love to make better, more modern styling using CSS.
+Another hurdle was my original code - it was basically only readable to me. I spent hours refactoring it, using basically the same logic, to create clearer, more readable code.
 
 ## Resources & credits
 Google, MDN, W3, Stackoverflow, my lovely brother, Leo and Greg. Temani Afif for more advanced CSS colorings and styles, the earth animation from The Pragmatick on Stackoverflow, and Luke Embrey for the h1 styling. Thank you all <3
