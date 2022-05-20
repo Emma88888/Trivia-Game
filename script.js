@@ -45,11 +45,11 @@ startGame.addEventListener("click", function () {
       if (interval !== 0) {
         clearInterval(interval);
       }
-      interval = setInterval(tick, 1000);
+      interval = setInterval(timerTick, 1000);
     });
 });
 
-function tick() {
+function timerTick() {
   timer--;
   if (timer <= 0) {
     goToNextQuestion();
@@ -75,9 +75,9 @@ function goToNextQuestion() {
 function checkAnswer(i) {
   const currentQuestion = questions[questionId];
   if (currentQuestion.answers[i] === currentQuestion.correctAnswer) {
-    changePoints(1);
-  } else {
     changePoints(-1);
+  } else {
+    changePoints(1);
   }
   goToNextQuestion();
 }
