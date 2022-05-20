@@ -169,7 +169,7 @@ section {
    height: 75px;
 } */
 
-.answer-box {
+#answer1, #answer2, #answer3, #answer4 {
    color: lightblue;
    display: inline-block;
    text-align: center;
@@ -195,7 +195,22 @@ section {
   transition: 0.2s;
 }
 
-.answer-box:hover {
+#answer1:hover {
+  --_d: 100%;
+  --_t: 0;
+  --_c: #0000;
+}
+#answer2:hover {
+  --_d: 100%;
+  --_t: 0;
+  --_c: #0000;
+}
+#answer3:hover {
+  --_d: 100%;
+  --_t: 0;
+  --_c: #0000;
+}
+#answer4:hover {
   --_d: 100%;
   --_t: 0;
   --_c: #0000;

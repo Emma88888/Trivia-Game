@@ -10,9 +10,9 @@ const answerElements = [
 const scoreElement = document.querySelector("#scorediv");
 
 let questions = [];
-let interval = -1;
+let interval = 0;
 let timer = 0;
-let questionId = -1;
+let questionId = 0;
 let points = 0;
 
 startGame.addEventListener("click", function () {
@@ -38,11 +38,11 @@ startGame.addEventListener("click", function () {
       }
     })
     .then(() => {
-      questionId = -1;
+      questionId = 0;
       points = 0;
       goToNextQuestion();
       timerElement.innerText = "Time Remaining: " + timer;
-      if (interval !== -1) {
+      if (interval !== 0) {
         clearInterval(interval);
       }
       interval = setInterval(tick, 1000);
