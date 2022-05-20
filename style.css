@@ -97,7 +97,7 @@ section {
     }
   }
 
-  /* spinning earth animation courtesy of https://stackoverflow.com/users/2511146/the-pragmatick */
+  /* spinning earth animation lines 63-98 courtesy of https://stackoverflow.com/users/2511146/the-pragmatick */
 
 
 #start-button {
@@ -170,7 +170,7 @@ section {
 } */
 
 .answer-box {
-  color: lightblue;
+   color: lightblue;
    display: inline-block;
    text-align: center;
    position: relative;
@@ -201,7 +201,7 @@ section {
   --_c: #0000;
 }
 
-/* background color code and hover elements from Temani Afif */
+/* background color code and hover elements on lines 189, 191-193 & 198-201 courtesy of Temani Afif */
 
 .score {
   color: lightblue;
