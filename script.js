@@ -4,9 +4,6 @@
 // 3) All questions are answered, prompt with final score appears
 // 4) Try again button?
 
-// Things I want/need to work on: questions and answers looping randomly, win/lose modal
-
-
 // const score = document.querySelector(".score");
 // const answers = document.querySelectorAll(".answer-box");
 // const answer1 = document.querySelector("#answer1")
@@ -90,10 +87,7 @@
 //     document.querySelector("#start-button").click();
 // }
 
-// refactored code using a slightly different logic, making better use of global variables, making better use of arrays and loops, cleaning it up and making it more coherent
-
-const startGameButton = document.querySelector("#start-button");
-console.log(startGameButton)
+const startGame = document.querySelector("#start-button");
 const timerElement = document.querySelector(".timer");
 const questionElement = document.querySelector(".question");
 const answerElements = [
@@ -106,11 +100,11 @@ const scoreElement = document.querySelector("#scorediv");
 
 let questions = [];
 let interval = -1;
-let timer = -1;
+let timer = 0;
 let questionId = -1;
 let points = 0;
 
-startGameButton.addEventListener("click", function () {
+startGame.addEventListener("click", function () {
   axios
     .get(
       "https://opentdb.com/api.php?amount=20&category=22&difficulty=easy&type=multiple"
@@ -159,4 +153,36 @@ function goToNextQuestion() {
     endQuiz();
     return;
   }
+
+  const currentQuestion = questions[questionId];
+  questionElement.innerText = currentQuestion.question;
+  for (let i = 0; i < currentQuestion.answers.length; i++) {
+    answerElements[i].innerText = currentQuestion.answers[i];
+  }
+}
+
+function checkAnswer(i) {
+  const currentQuestion = questions[questionId];
+  if (currentQuestion.answers[i] === currentQuestion.correctAnswer) {
+    changePoints(1);
+  } else {
+    changePoints(-1);
+  }
+  goToNextQuestion();
+}
+
+function changePoints(amount) {
+  points -= amount;
+  scoreElement.innerText = "Your score is " + points;
+}
+
+function endQuiz() {
+  timer = 0;
+  clearInterval(interval);
+  timerElement.innerText = "";
+  questionElement.innerText = "";
+  for (let i = 0; i < 4; i++) {
+    answerElements[i].innerText = "";
+  }
+  alert("Your final score was " + points + "!");
 }
