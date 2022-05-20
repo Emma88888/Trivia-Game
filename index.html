@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geography Trivia</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Rubik+Wet+Paint&display=swap" rel="stylesheet"> -->
-    <link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
-<style>
-    body {
-    font-family: 'Antic Didone';font-size: 22px;
-}
-</style>
-</style>
-</head>
-<body>
-    <section>
-        <div id="earth"></div>
-        <h1 class="title"></h1>
-            <span class="title-word title-word-1">Geography</span>
-            <span class="title-word title-word-2"> Trivia</span>
-        <h2 class="description">Answer twenty geography questions, see how many you can get right!</h2>
-        <h3 class="time-instruct">You'll have 15 seconds to answer each question.</h3>
-    <div class="start"></div>
-        <button id="start-button">Start Game</button>
-    <p class="question"></p>
-<div class="timer">Time left</div>
-<div class="question-buttons"></div>
-    <button class="answer-box" id="answer1" onclick="checkAnswer(this)">Answer 1</button>
-    <button class="answer-box" id="answer2" onclick="checkAnswer(this)">Answer 2</button>
-    <button class="answer-box" id="answer3" onclick="checkAnswer(this)"> Answer 3</button>
-    <button class="answer-box" id="answer4" onclick="checkAnswer(this)"> Answer 4</button>
-<div class="score-container"></div>
-    <div class="score" id="scorediv">Your score</div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Geography Trivia</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
+      <style>
+         body {
+         font-family: 'Antic Didone';font-size: 22px;
+         }
+      </style>
+      </style>
+   </head>
+   <body>
+      <section>
+         <div id="earth"></div>
+         <h1 class="title"></h1>
+         <span class="title-word title-word-1">Geography</span>
+         <span class="title-word title-word-2"> Trivia</span>
+         <h2 class="description">Answer twenty geography questions, see how many you can get right!</h2>
+         <h3 class="time-instruct">You'll have 15 seconds to answer each question.</h3>
+         <div class="start"></div>
+         <button id="start-button">Start Game</button>
+         <p class="question"></p>
+         <div class="timer">Time left</div>
+         <div class="question-buttons"></div>
+         <button class="answer-box" id="answer1" onclick="checkAnswer(this)">Answer 1</button>
+         <button class="answer-box" id="answer2" onclick="checkAnswer(this)">Answer 2</button>
+         <button class="answer-box" id="answer3" onclick="checkAnswer(this)"> Answer 3</button>
+         <button class="answer-box" id="answer4" onclick="checkAnswer(this)"> Answer 4</button>
+         <div class="score-container"></div>
+         <div class="score" id="scorediv">Your score</div>
+      </section>
+      <script src="script.js"></script>
+   </body>
 </html>
