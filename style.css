@@ -1,24 +1,19 @@
-/* how can I make this all fit in the browser withot changing shape when I change the browser size? */
-
 body {
     background-image: linear-gradient(lightskyblue, darkblue);
     text-align: center;
     margin: 0;
     padding: 0;
-    /* font-family: 'Goblin One', cursive; */
     background-color: #111;
 }
 
 section {
     text-align: center;
-    /* font-family: 'Goblin One', cursive; */
 }
 
 .title {
     float: center;
     clear: both;
     margin-top: 0px;
-    /* font-family: 'Goblin One', cursive; */
 }
 
 .title-word {
@@ -67,7 +62,6 @@ section {
     background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
     border-radius: 50%;
     background-size: 610px;
-    /* box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3); */
     animation-name: rotate;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -101,7 +95,6 @@ section {
 
 
 #start-button {
-    /* background-color: white; */
     border-radius: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: green;
@@ -115,7 +108,6 @@ section {
 }
 
 .question-container {
-   /* background: white; */
    align-items: center;
    padding: 15px;
    width: 50px;
@@ -125,7 +117,6 @@ section {
 
 .question-number {
    display: inline-block;
-   /* background-color: white; */
    border-radius: 100px;
    border: 2px solid transparent;
    margin-left: 50px;
@@ -140,7 +131,6 @@ section {
   color: lightblue;
     text-align: center;
     display: inline-block;
-    /* background-color: white; */
     border-radius: 25px;
     border: 2px solid transparent;
     padding: 60px;
@@ -152,7 +142,6 @@ section {
 .timer {
     color: lightblue;
     display: inline-block;
-    /* background-color: white; */
     border-radius: 100px;
     border: 2px solid transparent;
     margin: 50px;
@@ -161,23 +150,13 @@ section {
     height: 100px;
 }
 
-/* .answer-container {
-   background-color: lightskyblue;
-   align-items: center;
-   padding: 15px;
-   width: 100px;
-   height: 75px;
-} */
-
 #answer1, #answer2, #answer3, #answer4 {
    color: lightblue;
    display: inline-block;
    text-align: center;
    position: relative;
-   /* background-color: white; */
    border-radius: 25px;
    border: 2px solid transparent;
-   /* box-shadow: 5px 10px darkblue; */
    margin-top: 85px;
    margin-left: 25px;
    margin-right: 25px;
@@ -223,7 +202,6 @@ section {
   font-size: 50px;
    display: inline-block;
    position: relative;
-   /* background-color: white; */
    border-radius: 25px;
    border: 2px solid transparent;
    margin-top: 85px;

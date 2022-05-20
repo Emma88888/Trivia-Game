@@ -20,8 +20,8 @@ startGame.addEventListener("click", function () {
     .get(
       "https://opentdb.com/api.php?amount=20&category=22&difficulty=easy&type=multiple"
     )
-    .then(function (res) {
-      return res.data.results;
+    .then(function (response) {
+      return response.data.results;
     })
     .then(function (apiQuestions) {
       questions = [];
